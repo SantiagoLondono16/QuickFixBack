@@ -1,0 +1,38 @@
+{
+  "name": "quickfixback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production & node dist/start.js",
+    "dev": "SET NODE_ENV=development & ts-node-dev --ignore-watch node_modules ./src/start.ts",
+    "build": "tsc --build",
+    "lint": "npx eslint -c ./eslint.config.mjs",
+    "clean": "rm -rf ./dist; exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Juan Sebastian Herrera Gomez <jsebastianhg1006@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.20.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "http": "^0.0.1-security",
+    "module-alias": "^2.2.3",
+    "uuid": "^11.0.5"
+  }
+}
